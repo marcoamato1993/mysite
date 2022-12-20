@@ -3,11 +3,13 @@
 <html>
 
 <title>Marco Amato - Education</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/19a313026c.js" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" sizes="96x96" href="Image_Location/favicon.png"/>
 <link rel="stylesheet" href="Image_Location/academicons-1.9.2/css/academicons.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 	a:link {color: white; text-decoration: none; transition: 0.7s;}
 	a:visited {color: white; text-decoration: none; transition: 0.7s;}
 	a:hover {color: orange; text-decoration: none; transition: 0.7s;}
@@ -16,183 +18,213 @@
 	.text:hover {color: blue; text-decoration: underline; transition: 0.7s;}
 	.text:visited {color: blue; text-decoration: none; transition: 0.7s;}
 	.text:active {color: blue; text-decoration: none; transition: 0.7s;}
-	.head {font-family: helvetica; font-size: 20pt; color: black;}
-	.title {font-family: helvetica; font-size: 14pt; color: black;}
-	.txt {font-family: helvetica; font-size: 12pt; color: black;}
-	.foot {font-family: helvetica; font-size: 10pt; color: black;}
-	.innervh {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-	.innerv {position: absolute; top: 50%; transform: translate(0%,-50%);}
-	.innerh {position: absolute; left: 50%; transform: translate(-50%,0%);}
+
+	.body {margin: 0px; font-family: helvetica;}
+	.topnav {overflow: hidden; font-size: 14pt; padding: 10px; background-color: lightgray; text-align: center; color: white; position: relative;}
+	.topnav .icon {display: none;}
+	.menu {font-size: 14pt; padding: 10px;}
+	.titlecontainer {background-color: black; padding: 10px; display: flex; justify-content: space-between; flex-direction: row;}
+	.bloccotxt {margin: 0px; display: flex; align-self: center;}
+	.bloccoimg {margin: 0px; display: flex; align-self: center;}
+	.titletext {color: white; font-size: 20pt;}
+	.titleimage {height: 70px;}
+	.image {height: 50px;}
+	.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: row;}
+	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footertitle {color: white; margin: 0px; font-size: 14pt;}
+	.footertext {color: white; margin: 0px; font-size: 10pt;}
+
+	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
+	
+	.blocco1 {display: flex; flex-direction: row; width: 700px; padding: 0px; margin: auto;}
+	.bloccosx1 {width: 100px; padding: 0px; margin: auto; text-align: center;}
+	.bloccocen1 {width: 400px; padding: 0px 0px 0px 10px; margin: auto; text-align: justify;}
+	.bloccodx1 {width: 200px; padding: 0px 0px 0px 10px; margin: auto; text-align: center;}
+
+	.title {font-family: helvetica; font-size: 14pt; color: black; font-weight: bold; margin: 0px;}
+	.txt {font-family: helvetica; font-size: 12pt; color: black; margin: 0px;}
+
+	@media screen and (max-width: 750px) {
+		.blocco1 {display: flex; flex-direction: column; width: auto; padding: 0px; margin: auto;}
+		.bloccosx1 {width: auto; padding: 0px; margin: auto; text-align: center;}
+		.bloccocen1 {width: auto; padding-top: 10px; padding-bottom: 10px; margin: auto; text-align: center;}
+		.bloccodx1 {width: auto; padding: 0px; margin: auto; text-align: center;}
+		.container {display: flex; flex-direction: column; width: auto; padding: 10px; margin: auto;}
+		.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: column;}
+		.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccophone {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccolinks {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccoemail {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.titlecontainer {background-color: black; padding: 10px; display: flex; align-items: center; flex-direction: column-reverse;}
+		.bloccotxt {margin: 0px; padding-top: 10px; display: flex; align-self: center; text-align: center;}
+		.bloccoimg {margin: 0px; display: flex; align-self: center;}
+  		.topnav a:not(:first-child) {display: none;}
+  		.topnav a.icon {
+  		display: block;
+  		}
+		}
+
+	@media screen and (max-width: 750px) {
+  		.topnav.responsive {position: relative;}
+  		.topnav.responsive .icon {position: relative}
+  		.topnav.responsive a{
+    	display: block;
+    	text-align: center;
+  		}
+		}
+
 </style>
 
-<body style="margin: 0pt;">
+<body class="body">
 
-	<div style="background-color: black; height: 90px; width: 100%; position: relative;">
-		<div class="innerv" style="padding: 10px;">
-			<p class="head" style="margin:0; color: white;">Solid and Structural Mechanics Group</p>
+	<div class="titlecontainer">
+		<div class="bloccotxt">
+			<div class="titletext">Solid and Structural Mechanics Group</div>
 		</div>
-		<div class="innerv" style="width: 100%;">
-			<a href="https://www.unitn.it/en" target="_blank"><img src="Image_Location/unitnlogo.png" style="height:70px; float: right; padding: 10px;"></a>
+		<div class="bloccoimg">
+			<a href="https://www.unitn.it/en" target="_blank">
+				<img class="titleimage" src="Image_Location/unitnlogo.png">
+			</a>
 		</div>
 	</div>
 
-	<div style="background-color: lightgray; height: 42px; width: 100%; position: relative;">
-	<div style="width: 615px; height: 22px; margin: auto; padding: 10px">
-	<div style="content: ""; display: table; clear: both;">
-		<div style="float: left; width: 70px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="index.html">Home</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 103px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="color: gray; padding: 10px" href="Education.html">Education</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 100px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Research.html">Research</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 121px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Publications.html">Publications</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 126px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Conferences.html">Conferences</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 95px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Teaching.html">Teaching</a>
-			</div>
-  		</div>
-  	</div>
-  	</div>
-  	</div>
-
-	<div style="width: 810px; margin: auto;">
-	<div style="content: ""; display: table; clear: both;">
-		<div style="float: left; width: 100px; height: 150px; padding: 0px; margin: 10px; position: relative;">
-			<div class="title innervh" style="font-weight: bold; margin:0; text-align: center; padding: 70px 0;">Ph.D. Course</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 400px; height: 150px; padding: 0px; margin: 10px; position: relative;">
-  			<div class="innerv">
-			<p style="font-weight: bold; font-size: 14pt; margin:0;">University of Trento</p>
-			<p style="margin:0;">2020-<em>ongoing</em></p>
-			<p style="margin:10px 0px 0px 0px;">Supervisors: Prof. Francesco Dal Corso, Prof. Davide Bigoni and Prof. Andrea Piccolroaz</p>
-			</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 250px; height: 150px; text-align: center; padding: 0; margin: 10px; position: relative;">
-			<div>
-			<i class="fa-solid fa-building-columns" style="font-size:50px; color:lightgray;"></i>
-			<p style="margin:10px 0px 0px 0px;">Università di Trento</p>
-			<p style="margin:0;">Dipartimento di Ingegneria Civile, Ambientale e Meccanica (DICAM)</p>
-			<p style="margin:0;">Via Mesiano 77</p>
-			<p style="margin:0;">38123 Trento</p>
-			</div>
-  		</div>
-		<div style="float: left; width: 100px; height: 150px; padding: 0px; margin: 10px; position: relative;">
-			<div class="title innervh" style="font-weight: bold; margin:0; text-align: center; padding: 0;">Visiting Scholar</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 400px; height: 150px; padding: 0px; margin: 10px; position: relative;">
-  			<div class="innerv">
-			<p style="font-weight: bold; font-size: 14pt; margin:0;">Florida Atlantic University</p>
-			<p style="margin:0;">2019-2020</p>
-			<p style="margin:0;">Host: Prof. Isaac Elishakoff</p>
-			</div>
-
-  		</div>
-  		<div class="txt" style="float: left; width: 250px; height: 150px; text-align: center; padding: 0; margin: 10px; position: relative;">
-			<div>
-			<i class="fa-solid fa-building-columns" style="font-size:50px; color:lightgray;"></i>
-			<p style="margin:10px 0px 0px 0px;">Florida Atlantic University</p>
-			<p style="margin:0;">Department of Ocean & Mechanical Engineering (OME)</p>
-			<p style="margin:0;">777 Glades Road</p>
-			<p style="margin:0;">Boca Raton, FL 33431</p>
-			</div>
-  		</div>
-  		<div style="float: left; width: 100px; height: 186px; padding: 0px; margin: 10px; position: relative;">
-			<div class="title innervh" style="font-weight: bold; margin:0; text-align: center; padding: 0;">Master's Degree</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 400px; height: 186px; padding: 0px; margin: 10px; position: relative;">
-  			<div class="innerv">
-			<p style="font-weight: bold; font-size: 14pt; margin:0;">University of Bologna</p>
-			<p style="margin:0;">2016-2020</p>
-			<p style="margin:0;">Master's Degree in Civil Engineering: 106/110</p>
-			<p style="margin:10px 0px 0px 0px;">Thesis: <a class="text" href="Thesis/Amato_Marco_Tesi_Magistrale.pdf" target="_blank" download><em>The Galerkin method for vibrational problem on stepped structures</em></a></p>
-			<p style="margin:0;">Relator: Prof. Alessandro Marzani</p>
-			<p style="margin:0;">Co-relator: Prof. Isaac Elishakoff</p>
-			</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 250px; height: 186px; text-align: center; padding: 0; margin: 10px; position: relative;">
-  			<div>
-			<i class="fa-solid fa-building-columns" style="font-size:50px; color:lightgray;"></i>
-			<p style="margin:10px 0px 0px 0px;">ALMA MATER STUDIORUM</p>
-			<p style="margin:0;">Università di Bologna</p>
-			<p style="margin:0;">Dipartimento di Ingegneria Civile, Chimica, Ambientale e dei Materiali (DICAM)</p>
-			<p style="margin:0;">Viale del Risorgimento 2</p>
-			<p style="margin:0;">40136 Bologna</p>
-			</div>
-  		</div>
-		<div style="float: left; width: 100px; height: 186px; padding: 0px; margin: 10px; position: relative;">
-			<div class="title innervh" style="font-weight: bold; margin:0; text-align: center; padding: 0;">Bachelor's Degree</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 400px; height: 186px; padding: 0px; margin: 10px; position: relative;">
-  			<div class="innerv">
-			<p style="font-weight: bold; font-size: 14pt; margin:0;">University of Bologna</p>
-			<p style="margin:0;">2012-2016</p>
-			<p style="margin:0;">Bachelor's Degree in Civil Engineering: 97/110</p>
-			<p style="margin:10px 0px 0px 0px;">Thesis: <a class="text" href="Thesis/Amato_Marco_Tesi_Triennale.pdf" target="_blank" download><em>The influence of prestressing of the shear test of mansonry samples: an experimental study (written in Italian)</em></a></p>
-			<p style="margin:0;">Relator: Prof. Cristina Gentilini</p>
-			<p style="margin:0;">Co-relators: Prof. Stefano de Miranda and Dott. Antonio Maria d'Altri</p>
-			</div>
-  		</div>
-  		<div class="txt" style="float: left; width: 250px; height: 186px; text-align: center; padding: 0; margin: 10px; position: relative;">
-  			<div>
-			<i class="fa-solid fa-building-columns" style="font-size:50px; color:lightgray;"></i>
-			<p style="margin:10px 0px 0px 0px;">ALMA MATER STUDIORUM</p>
-			<p style="margin:0;">Università di Bologna</p>
-			<p style="margin:0;">Dipartimento di Ingegneria Civile, Chimica, Ambientale e dei Materiali (DICAM)</p>
-			<p style="margin:0;">Viale del Risorgimento 2</p>
-			<p style="margin:0;">40136 Bologna</p>
-			</div>
-  		</div>
-  		</div>
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="icon" >
+    		<i class="fa fa-bars" onclick="myFunction()"></i>
+  		</a>
+  		<a class="menu" href="index.html">Home</a>
+  		<a class="menu" style="color: gray" href="Education.html">Education</a>
+  		<a class="menu" href="Research.html">Research</a>
+  		<a class="menu" href="Publications.html">Publications</a>
+  		<a class="menu" href="Conferences.html">Conferences</a>
+  		<a class="menu" href="Teaching.html">Teaching</a>
 	</div>
 
-	<footer style="width: 100%; color: white">
-	<div style="content: ""; display: table; clear: both;">
-  		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
-  			<div class="foot" style="height: 50pt; width: auto; position: relative; top: 30pt;">
-    		<p style="font-size: 14pt; color: white; margin:0;">Address</p>
-    		<p style="color: white; margin:0;">University of Trento</p>
-    		<p style="color: white; margin:0;">DICAM, Via Mesiano 77,</p>
-    		<p style="color: white; margin:0;">38123, Trento, Italy</p>
-    		</div>
- 		</div>
- 		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
- 			<div class="foot" style="height: 30pt; width: auto; position: relative; top: 20pt;">
-			<p style="font-size: 14pt; color: white; margin:0;">Phone</p>
-    		<p style="color: white; margin:0;">+39 347-2472996</p>
-    		<p style="font-size: 14pt; color: white; margin:0; padding-top: 10pt;">Quick links</p>
-    		<p style="margin: 0pt; color: white">
+	<div class="container">
+	<div class="blocco1">
+		<div class="bloccosx1">
+			<p class="title">Ph.D. Course</p>
+		</div>
+		<div class="bloccocen1">	
+			<p class="title">University of Trento</p>
+			<p class="txt">2020-<em>ongoing</em></p>
+			<p class="txt" style="padding-top: 10px;">Supervisors: Prof. Francesco Dal Corso, Prof. Davide Bigoni and Prof. Andrea Piccolroaz</p>
+		</div>
+		<div class="bloccodx1">
+			<a href="https://www.dicam.unitn.it/en" target="_blank">
+				<img class="image" src="Image_Location/unitnlogoround.png"></img>
+			</a>
+			<p class="txt">Università di Trento</p>
+			<p class="txt">Dipartimento di Ingegneria Civile, Ambientale e Meccanica (DICAM)</p>
+			<p class="txt">Via Mesiano 77</p>
+			<p class="txt">38123 Trento</p>
+		</div>
+	</div>
+	<div class="blocco1" style="padding-top: 10px;">
+		<div class="bloccosx1">
+			<p class="title">Visiting Scholar</p>
+		</div>
+		<div class="bloccocen1">
+			<p class="title">Florida Atlantic University</p>
+			<p class="txt">2019-2020</p>
+			<p class="txt" style="padding-top: 10px;">Host: Prof. Isaac Elishakoff</p>
+		</div>
+		<div class="bloccodx1">
+			<a href="https://www.fau.edu/engineering/ome/" target="_blank">
+				<img class="image" src="Image_Location/faulogo.png"></img>
+			</a>
+			<p class="txt">Florida Atlantic University</p>
+			<p class="txt">Department of Ocean & Mechanical Engineering (OME)</p>
+			<p class="txt">777 Glades Road</p>
+			<p class="txt">Boca Raton, FL 33431</p>
+		</div>
+	</div>
+	<div class="blocco1" style="padding-top: 10px;">
+		<div class="bloccosx1">	
+			<p class="title">Master's Degree</p>
+  		</div>
+		<div class="bloccocen1">
+			<p class="title">University of Bologna</p>
+			<p class="txt">2016-2020</p>
+			<p class="txt">Master's Degree in Civil Engineering: 106/110</p>
+			<p class="txt" style="padding-top: 10px;">Thesis: <a class="text" href="Thesis/Amato_Marco_Tesi_Magistrale.pdf" target="_blank" download><em>The Galerkin method for vibrational problem on stepped structures</em></a></p>
+			<p class="txt">Relator: Prof. Alessandro Marzani</p>
+			<p class="txt">Co-relator: Prof. Isaac Elishakoff</p>
+		</div>
+		<div class="bloccodx1">	
+			<a href="https://dicam.unibo.it/en/index.html" target="_blank">
+				<img class="image" src="Image_Location/logounibo.png"></img>
+			</a>
+			<p class="txt">ALMA MATER STUDIORUM</p>
+			<p class="txt">Università di Bologna</p>
+			<p class="txt">Dipartimento di Ingegneria Civile, Chimica, Ambientale e dei Materiali (DICAM)</p>
+			<p class="txt">Viale del Risorgimento 2</p>
+			<p class="txt">40136 Bologna</p>
+		</div>
+	</div>
+	<div class="blocco1" style="padding-top: 10px;">
+		<div class="bloccosx1">	
+			<p class="title">Bachelor's Degree</p>
+  		</div>
+		<div class="bloccocen1">
+			<p class="title">University of Bologna</p>
+			<p class="txt">2012-2016</p>
+			<p class="txt">Bachelor's Degree in Civil Engineering: 97/110</p>
+			<p class="txt" style="padding-top: 10px;">Thesis: <a class="text" href="Thesis/Amato_Marco_Tesi_Triennale.pdf" target="_blank" download><em>The influence of prestressing of the shear test of mansonry samples: an experimental study (written in Italian)</em></a></p>
+			<p class="txt">Relator: Prof. Cristina Gentilini</p>
+			<p class="txt">Co-relators: Prof. Stefano de Miranda and Dott. Antonio Maria d'Altri</p>
+		</div>
+		<div class="bloccodx1">	
+			<a href="https://dicam.unibo.it/en/index.html" target="_blank">
+				<img class="image" src="Image_Location/logounibo.png"></img>
+			</a>
+			<p class="txt">ALMA MATER STUDIORUM</p>
+			<p class="txt">Università di Bologna</p>
+			<p class="txt">Dipartimento di Ingegneria Civile, Chimica, Ambientale e dei Materiali (DICAM)</p>
+			<p class="txt">Viale del Risorgimento 2</p>
+			<p class="txt">40136 Bologna</p>
+		</div>
+	</div>
+	</div>
+			
+	<div class="footercontainer">
+  		<div class="footerbloccoaddress">
+    		<p class="footertitle">Address</p>
+    		<p class="footertext">University of Trento</p>
+    		<p class="footertext">DICAM, Via Mesiano 77,</p>
+    		<p class="footertext">38123, Trento, Italy</p>
+    	</div>
+    	<div class="footerbloccophone">
+    		<p class="footertitle">Phone</p>
+    		<p class="footertext">+39 347-2472886</p>
+    	</div>
+    	<div class="footerbloccolinks">
+    		<p class="footertitle">Quick links</p>
+    		<p class="footertext">
     			<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
     			<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
     			<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
     		</p>
-    		</div>
-  		</div>
-  		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
-  			<div class="foot" style="height: 30pt; width: auto; position: relative; top: 45pt;">
-    		<p style="font-size: 14pt; color: white; margin:0;">Email</p>
-    		<p style="color: white; margin:0;"><a href="mailto:marco.amato@unitn.it">marco.amato@unitn.it</a></p>
-    		</div>
-  		</div>
+    	</div>
+    	<div class="footerbloccoemail">
+    		<p class="footertitle">Email</p>
+    		<p class="footertext"><a href="mailto:marco.amato@unitn.it">marco.amato@unitn.it</a></p>
+    	</div>
 	</div>
-	</footer>
+
+<script>
+	function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className == "topnav") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+	}
+</script>
 
 </body>
 </html>
