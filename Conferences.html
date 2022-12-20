@@ -3,116 +3,135 @@
 <html>
 
 <title>Marco Amato - Conferences</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/19a313026c.js" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" sizes="96x96" href="Image_Location/favicon.png"/>
 <link rel="stylesheet" href="Image_Location/academicons-1.9.2/css/academicons.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 	a:link {color: white; text-decoration: none; transition: 0.7s;}
 	a:visited {color: white; text-decoration: none; transition: 0.7s;}
 	a:hover {color: orange; text-decoration: none; transition: 0.7s;}
 	a:active {color: white; text-decoration: none; transition: 0.7s;}
-	.text:link {color: blue; text-decoration: none; transition: 0.7s;}
-	.text:hover {color: blue; text-decoration: underline; transition: 0.7s;}
-	.text:visited {color: blue; text-decoration: none; transition: 0.7s;}
-	.text:active {color: blue; text-decoration: none; transition: 0.7s;}
-	.head {font-family: helvetica; font-size: 20pt; color: black;}
-	.title {font-family: helvetica; font-size: 14pt; color: black;}
-	.txt {font-family: helvetica; font-size: 12pt; color: black;}
-	.foot {font-family: helvetica; font-size: 10pt; color: black;}
-	.innervh {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-	.innerv {position: absolute; top: 50%; transform: translate(0%,-50%);}
-	.innerh {position: absolute; left: 50%; transform: translate(-50%,0%);}
+
+	.body {margin: 0px; font-family: helvetica;}
+	.topnav {overflow: hidden; font-size: 14pt; padding: 10px; background-color: lightgray; text-align: center; color: white; position: relative;}
+	.topnav .icon {display: none;}
+	.menu {font-size: 14pt; padding: 10px;}
+	.titlecontainer {background-color: black; padding: 10px; display: flex; justify-content: space-between; flex-direction: row;}
+	.bloccotxt {margin: 0px; display: flex; align-self: center;}
+	.bloccoimg {margin: 0px; display: flex; align-self: center;}
+	.titletext {color: white; font-size: 20pt;}
+	.titleimage {height: 70px;}
+	.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: row;}
+	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footertitle {color: white; margin: 0px; font-size: 14pt;}
+	.footertext {color: white; margin: 0px; font-size: 10pt;}
+
+	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
+
+	.title {font-family: helvetica; font-size: 14pt; color: black; font-weight: bold; margin: 0px;}
+	.txt {font-family: helvetica; font-size: 12pt; color: black; margin: 0px; text-align: justify; padding-bottom: 10px; padding-top: 10px}
+
+	@media screen and (max-width: 750px) {
+		.container {display: flex; flex-direction: column; width: auto; padding: 10px; margin: auto;}
+		.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: column;}
+		.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccophone {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccolinks {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccoemail {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.titlecontainer {background-color: black; padding: 10px; display: flex; align-items: center; flex-direction: column-reverse;}
+		.bloccotxt {margin: 0px; padding-top: 10px; display: flex; align-self: center; text-align: center;}
+		.bloccoimg {margin: 0px; display: flex; align-self: center;}
+  		.topnav a:not(:first-child) {display: none;}
+  		.topnav a.icon {
+  		display: block;
+  		}
+		}
+
+	@media screen and (max-width: 750px) {
+  		.topnav.responsive {position: relative;}
+  		.topnav.responsive .icon {position: relative}
+  		.topnav.responsive a{
+    	display: block;
+    	text-align: center;
+  		}
+		}
+
 </style>
 
-<body style="margin: 0pt;">
+<body class="body">
 
-	<div style="background-color: black; height: 90px; width: 100%; position: relative;">
-		<div class="innerv" style="padding: 10px;">
-			<p class="head" style="margin:0; color: white;">Solid and Structural Mechanics Group</p>
+	<div class="titlecontainer">
+		<div class="bloccotxt">
+			<div class="titletext">Solid and Structural Mechanics Group</div>
 		</div>
-		<div class="innerv" style="width: 100%;">
-			<a href="https://www.unitn.it/en" target="_blank"><img src="Image_Location/unitnlogo.png" style="height:70px; float: right; padding: 10px;"></a>
+		<div class="bloccoimg">
+			<a href="https://www.unitn.it/en" target="_blank">
+				<img class="titleimage" src="Image_Location/unitnlogo.png">
+			</a>
 		</div>
 	</div>
 
-	<div style="background-color: lightgray; height: 42px; width: 100%; position: relative;">
-	<div style="width: 615px; height: 22px; margin: auto; padding: 10px">
-	<div style="content: ""; display: table; clear: both;">
-		<div style="float: left; width: 70px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="index.html">Home</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 103px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Education.html">Education</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 100px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Research.html">Research</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 121px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Publications.html">Publications</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 126px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="color: gray; padding: 10px" href="Conferences.html">Conferences</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 95px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Teaching.html">Teaching</a>
-			</div>
-  		</div>
-  	</div>
-  	</div>
-  	</div>
-
-	<div style="width: 810px; margin: auto;">
-
-	<p class="title" style="font-weight: bold; padding: 10pt 10pt 10pt 10pt; margin: 0pt;"> Presentations </p>
-	<ol class="txt" reversed style="margin: 0pt 0pt 10pt 0pt;">
-		<li>EUROMECH Colloquium 626, <em>Free vibration and flutter of a multi-component beam in a supersonic flow</em>, Virtual Conference, Online, September 6 – 8, 2021.
-		<li>ASME’s IMECE, <em>Flutter of a Beam in a Supersonic Flow: no need in full Timoshenko-Ehrenfest Equations</em>, Virtual Conference, Online, November 16 – 19, 2020.
-	</ol>
-
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="icon" >
+    		<i class="fa fa-bars" onclick="myFunction()"></i>
+  		</a>
+  		<a class="menu" href="index.html">Home</a>
+  		<a class="menu" href="Education.html">Education</a>
+  		<a class="menu" href="Research.html">Research</a>
+  		<a class="menu" href="Publications.html">Publications</a>
+  		<a class="menu" style="color: gray" href="Conferences.html">Conferences</a>
+  		<a class="menu" href="Teaching.html">Teaching</a>
+	</div>
+	
+	<div class="container">
+			<p class="title"> Presentations </p>
+			<ol class="txt" style="padding-bottom: 0px;" reversed>
+				<li>EUROMECH Colloquium 626, <em>Free vibration and flutter of a multi-component beam in a supersonic flow</em>, Virtual Conference, Online, September 6 – 8, 2021.
+				<li>ASME’s IMECE, <em>Flutter of a Beam in a Supersonic Flow: no need in full Timoshenko-Ehrenfest Equations</em>, Virtual Conference, Online, November 16 – 19, 2020.
+			</ol>
 	</div>
 
-	<footer style="width: 100%; color: white">
-	<div style="content: ""; display: table; clear: both;">
-  		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
-  			<div class="foot" style="height: 50pt; width: auto; position: relative; top: 30pt;">
-    		<p style="font-size: 14pt; color: white; margin:0;">Address</p>
-    		<p style="color: white; margin:0;">University of Trento</p>
-    		<p style="color: white; margin:0;">DICAM, Via Mesiano 77,</p>
-    		<p style="color: white; margin:0;">38123, Trento, Italy</p>
-    		</div>
- 		</div>
- 		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
- 			<div class="foot" style="height: 30pt; width: auto; position: relative; top: 20pt;">
-			<p style="font-size: 14pt; color: white; margin:0;">Phone</p>
-    		<p style="color: white; margin:0;">+39 347-2472996</p>
-    		<p style="font-size: 14pt; color: white; margin:0; padding-top: 10pt;">Quick links</p>
-    		<p style="margin: 0pt; color: white">
+	<div class="footercontainer">
+  		<div class="footerbloccoaddress">
+    		<p class="footertitle">Address</p>
+    		<p class="footertext">University of Trento</p>
+    		<p class="footertext">DICAM, Via Mesiano 77,</p>
+    		<p class="footertext">38123, Trento, Italy</p>
+    	</div>
+    	<div class="footerbloccophone">
+    		<p class="footertitle">Phone</p>
+    		<p class="footertext">+39 347-2472886</p>
+    	</div>
+    	<div class="footerbloccolinks">
+    		<p class="footertitle">Quick links</p>
+    		<p class="footertext">
     			<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
     			<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
     			<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
     		</p>
-    		</div>
-  		</div>
-  		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
-  			<div class="foot" style="height: 30pt; width: auto; position: relative; top: 45pt;">
-    		<p style="font-size: 14pt; color: white; margin:0;">Email</p>
-    		<p style="color: white; margin:0;"><a href="mailto:marco.amato@unitn.it">marco.amato@unitn.it</a></p>
-    		</div>
-  		</div>
+    	</div>
+    	<div class="footerbloccoemail">
+    		<p class="footertitle">Email</p>
+    		<p class="footertext"><a href="mailto:marco.amato@unitn.it">marco.amato@unitn.it</a></p>
+    	</div>
 	</div>
-	</footer>
+
+<script>
+	function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className == "topnav") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+	}
+</script>
 
 </body>
 </html>
