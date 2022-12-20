@@ -3,11 +3,13 @@
 <html>
 
 <title>Marco Amato - Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/19a313026c.js" crossorigin="anonymous"></script>
 <link rel="icon" type="image/png" sizes="96x96" href="Image_Location/favicon.png"/>
 <link rel="stylesheet" href="Image_Location/academicons-1.9.2/css/academicons.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 	a:link {color: white; text-decoration: none; transition: 0.7s;}
 	a:visited {color: white; text-decoration: none; transition: 0.7s;}
 	a:hover {color: orange; text-decoration: none; transition: 0.7s;}
@@ -16,136 +18,169 @@
 	.text:hover {color: blue; text-decoration: underline; transition: 0.7s;}
 	.text:visited {color: blue; text-decoration: none; transition: 0.7s;}
 	.text:active {color: blue; text-decoration: none; transition: 0.7s;}
-	.head {font-family: helvetica; font-size: 20pt; color: black;}
-	.title {font-family: helvetica; font-size: 14pt; color: black;}
-	.txt {font-family: helvetica; font-size: 12pt; color: black;}
-	.foot {font-family: helvetica; font-size: 10pt; color: black;}
-	.innervh {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-	.innerv {position: absolute; top: 50%; transform: translate(0%,-50%);}
-	.innerh {position: absolute; left: 50%; transform: translate(-50%,0%);}
+
+	.body {margin: 0px; font-family: helvetica;}
+	.topnav {overflow: hidden; font-size: 14pt; padding: 10px; background-color: lightgray; text-align: center; color: white; position: relative;}
+	.topnav .icon {display: none;}
+	.menu {font-size: 14pt; padding: 10px;}
+	.titlecontainer {background-color: black; padding: 10px; display: flex; justify-content: space-between; flex-direction: row;}
+	.bloccotxt {margin: 0px; display: flex; align-self: center;}
+	.bloccoimg {margin: 0px; display: flex; align-self: center;}
+	.titletext {color: white; font-size: 20pt;}
+	.titleimage {height: 70px;}
+	.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: row;}
+	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footertitle {color: white; margin: 0px; font-size: 14pt;}
+	.footertext {color: white; margin: 0px; font-size: 10pt;}
+
+	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
+	.imgcontainer {display: flex; flex-direction: column; width: 450px; margin-left: auto; margin-right: auto; padding-bottom: 10px; padding-top: 10px}
+
+	.head {font-family: helvetica; font-size: 20pt; color: black; font-weight: bold; text-align: center; margin: 0px;}
+	.title {font-family: helvetica; font-size: 14pt; color: black; font-weight: bold; margin: 0px;}
+	.txt {font-family: helvetica; font-size: 12pt; color: black; margin: 0px; text-align: justify; padding-bottom: 10px; padding-top: 10px}
+
+	@media screen and (max-width: 750px) {
+		.container {display: flex; flex-direction: column; width: auto; padding: 10px; margin: auto;}
+		.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: column;}
+		.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccophone {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccolinks {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccoemail {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.titlecontainer {background-color: black; padding: 10px; display: flex; align-items: center; flex-direction: column-reverse;}
+		.bloccotxt {margin: 0px; padding-top: 10px; display: flex; align-self: center; text-align: center;}
+		.bloccoimg {margin: 0px; display: flex; align-self: center;}
+  		.topnav a:not(:first-child) {display: none;}
+  		.topnav a.icon {
+  		display: block;
+  		}
+		}
+
+	@media screen and (min-width: 450px) and (max-width: 750px) {
+		.imgcontainer {display: flex; flex-direction: column; width: 450px; margin-left: auto; margin-right: auto;}
+		}
+
+	@media screen and (max-width: 450px) {
+		.imgcontainer {display: flex; flex-direction: column; width: 100%; margin-left: auto; margin-right: auto;}
+		}
+
+	@media screen and (max-width: 750px) {
+  		.topnav.responsive {position: relative;}
+  		.topnav.responsive .icon {position: relative}
+  		.topnav.responsive a{
+    	display: block;
+    	text-align: center;
+  		}
+		}
+
 </style>
 
-<body style="margin: 0pt;">
+<body class="body">
 
-	<div style="background-color: black; height: 90px; width: 100%; position: relative;">
-		<div class="innerv" style="padding: 10px;">
-			<p class="head" style="margin:0; color: white;">Solid and Structural Mechanics Group</p>
+	<div class="titlecontainer">
+		<div class="bloccotxt">
+			<div class="titletext">Solid and Structural Mechanics Group</div>
 		</div>
-		<div class="innerv" style="width: 100%;">
-			<a href="https://www.unitn.it/en" target="_blank"><img src="Image_Location/unitnlogo.png" style="height:70px; float: right; padding: 10px;"></a>
+		<div class="bloccoimg">
+			<a href="https://www.unitn.it/en" target="_blank">
+				<img class="titleimage" src="Image_Location/unitnlogo.png">
+			</a>
 		</div>
 	</div>
 
-	<div style="background-color: lightgray; height: 42px; width: 100%; position: relative;">
-	<div style="width: 615px; height: 22px; margin: auto; padding: 10px">
-	<div style="content: ""; display: table; clear: both;">
-		<div style="float: left; width: 70px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="index.html">Home</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 103px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Education.html">Education</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 100px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="color: gray; padding: 10px" href="Research.html">Research</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 121px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Publications.html">Publications</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 126px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Conferences.html">Conferences</a>
-			</div>
-  		</div>
-  		<div style="float: left; width: 95px; height: 22px; padding: 0px; margin: 0px; position: relative; background-color: lightgray; text-align: center; color: white;" class="title">
-			<div class="title innervh" style="margin:0; text-align: center; padding: 0;">
-				<a style="padding: 10px" href="Teaching.html">Teaching</a>
-			</div>
-  		</div>
-  	</div>
-  	</div>
-  	</div>
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="icon" >
+    		<i class="fa fa-bars" onclick="myFunction()"></i>
+  		</a>
+  		<a class="menu" href="index.html">Home</a>
+  		<a class="menu" href="Education.html">Education</a>
+  		<a class="menu" style="color: gray" href="Research.html">Research</a>
+  		<a class="menu" href="Publications.html">Publications</a>
+  		<a class="menu" href="Conferences.html">Conferences</a>
+  		<a class="menu" href="Teaching.html">Teaching</a>
+	</div>
 
-	<div style="width: 810px; margin: auto;">
+	<div class="container">
 
-	<p class="head" style="font-weight: bold; padding: 20pt 20pt 10pt 20pt; text-align: center; margin: 0pt;"> Configurational Forces </p>
+	<p class="head"> Configurational Forces </p>
 
-	<img style="padding: 10pt;display: block;margin-left: auto;	margin-right: auto;" src="Image_Location/Configurational.png" alt>
+	<img class="imgcontainer" src="Image_Location/Configurational.png" alt>
 
-	<p class="title" style="font-weight: bold; padding-left: 10pt; padding-right: 10pt; margin: 0pt;"> Abstract </p>
-	<p class="txt" style="padding: 10pt; text-align: justify; margin: 0pt;"> With a loose reference to problems of penetration in biomechanics (for instance, a penetrating through a cell’s membrane or a cell sucked with a pipette), the role of configurational forces is investigated during the process in which a compliant intruder is inserted into an elastic structure. For insertion into a rigid constraint, a configurational force proportional to the square of the strain needed to deform the body, which is penetrating, is found. This force has a more complex structure when the compliance of the constraint is kept into account, but in all cases, it tends to expel the penetrating body. </p>
+	<p class="title"> Abstract </p>
+	<p class="txt"> With a loose reference to problems of penetration in biomechanics (for instance, a penetrating through a cell’s membrane or a cell sucked with a pipette), the role of configurational forces is investigated during the process in which a compliant intruder is inserted into an elastic structure. For insertion into a rigid constraint, a configurational force proportional to the square of the strain needed to deform the body, which is penetrating, is found. This force has a more complex structure when the compliance of the constraint is kept into account, but in all cases, it tends to expel the penetrating body. </p>
 
-	<p class="title" style="font-weight: bold; padding-left: 10pt; padding-right: 10pt; margin: 0pt;"> Related papers: </p>
-	<ul class="txt" style="text-align: justify; padding-top: 10pt; padding-bottom: 10pt; padding-right: 10pt; margin: 0pt;">
+	<p class="title"> Related papers: </p>
+	<ul class="txt">
 		<li>Bigoni, D., Amato, M., & Dal Corso, F. (2022). <a class="text" href="Pubblicazioni/penetration_chapter_springer2021.pdf" target="_blank" download>Configurational Forces in Penetration Processes.</a> In <em>Solid (Bio) mechanics: Challenges of the Next Decade</em> (pp. 429-437). Springer, Cham.
 	</ul>
 
-	<p class="head" style="font-weight: bold; padding: 10pt 20pt 10pt 20pt; text-align: center; margin: 0pt;"> Galerkin Method for Stepped Structures </p>
+	<p class="head"> Galerkin Method for Stepped Structures </p>
 
-	<img style="padding: 10pt;display: block;margin-left: auto;	margin-right: auto;" src="Image_Location/Galerkin.png" alt>
+	<img class="imgcontainer" src="Image_Location/Galerkin.png" alt>
 
-	<p class="title" style="font-weight: bold; padding-left: 10pt; padding-right: 10pt; margin: 0pt;"> Abstract </p>
-	<p class="txt" style="padding: 10pt; text-align: justify; margin: 0pt;"> With these studies we takle free vibrations of stepped structures providing two versions of the Galerkin method. Specifically, we first apply the straightforward version of the Galerkin method which stipulates the employment of the Galerkin procedure to be conducted in each subdomain, or step, of the structure. Second, the rigorous realization of the Galerkin method is presented where the structural parameters, like rigidity and mass, are treated as generalized functions over the entire domain. This latter implementation utilizes unit step functions, as well as the Dirac's delta function, and its derivative to treat the changes of the structural parameters across the steps. It turns out that this rigorous implementation leads to additional terms that do not appear in the straightforward (or “naïve”) realization of the Galerkin method. Both versions of Galerkin methods are compared with the exact solutions of the considered problems. It turns out that with increase of number of terms in the expansion, the rigorous, generalized-functions based Galerkin method tends to exact solution. In contrast the naïve realization of Galerkin's method, which is usually utilized in literature, does not tend to exact solution. These studies demonstrate that extreme care must be taken when implementing the Galerkin's method for stepped structures, and only the rigorous version should be employed. </p>
+	<p class="title"> Abstract </p>
+	<p class="txt"> With these studies we takle free vibrations of stepped structures providing two versions of the Galerkin method. Specifically, we first apply the straightforward version of the Galerkin method which stipulates the employment of the Galerkin procedure to be conducted in each subdomain, or step, of the structure. Second, the rigorous realization of the Galerkin method is presented where the structural parameters, like rigidity and mass, are treated as generalized functions over the entire domain. This latter implementation utilizes unit step functions, as well as the Dirac's delta function, and its derivative to treat the changes of the structural parameters across the steps. It turns out that this rigorous implementation leads to additional terms that do not appear in the straightforward (or “naïve”) realization of the Galerkin method. Both versions of Galerkin methods are compared with the exact solutions of the considered problems. It turns out that with increase of number of terms in the expansion, the rigorous, generalized-functions based Galerkin method tends to exact solution. In contrast the naïve realization of Galerkin's method, which is usually utilized in literature, does not tend to exact solution. These studies demonstrate that extreme care must be taken when implementing the Galerkin's method for stepped structures, and only the rigorous version should be employed. </p>
 
-	<p class="title" style="font-weight: bold; padding-left: 10pt; padding-right: 10pt; margin: 0pt;"> Related papers: </p>
-	<ul class="txt" style="text-align: justify; padding-top: 10pt; padding-bottom: 10pt; padding-right: 10pt; margin: 0pt;">
+	<p class="title"> Related papers: </p>
+	<ul class="txt">
 		<li>Elishakoff, I., Amato, M., Ankitha, A. P., & Marzani, A. (2021). <a class="text" href="Pubblicazioni/JSV.pdf" target="_blank" download>Rigorous implementation of the Galerkin method for stepped structures needs generalized functions.</a> <em>Journal of Sound and Vibration, 490,</em> 115708.
 		<li>Elishakoff, I., Amato, M., & Marzani, A. (2021). <a class="text" href="Pubblicazioni/MSSP.pdf" target="_blank" download>Galerkin’s method revisited and corrected in the problem of Jaworski and Dowell.</a> <em>Mechanical Systems and Signal Processing, 155,</em> 107604.
 		<li>Elishakoff, I., & Amato, M. (2021). <a class="text" href="Pubblicazioni/Elishakoff-Amato2021_Article_FlutterOfABeamInSupersonicFlow.pdf" target="_blank" download>Flutter of a beam in supersonic flow: truncated version of Timoshenko–Ehrenfest equation is sufficient.</a> <em>International Journal of Mechanics and Materials in Design, 17</em>(4), 783-799.
 		<li>Amato, M., Elishakoff, I., & Reddy, J. N. (2021). <a class="text" href="Pubblicazioni/AIAA.pdf" target="_blank" download>Flutter of a Multicomponent Beam in a Supersonic Flow.</a> <em>AIAA Journal, 59</em>(11), 4342-4353.
 	</ul>
 
-	<p class="head" style="font-weight: bold; padding: 10pt 20pt 10pt 20pt; text-align: center; margin: 0pt;"> KISADAMA </p>
+	<p class="head"> KISADAMA </p>
 
-	<img style="padding: 10pt;display: block;margin-left: auto;	margin-right: auto;" src="Image_Location/KISADAMA.png" alt>
+	<img class="imgcontainer" src="Image_Location/KISADAMA.png" alt>
 
-	<p class="title" style="font-weight: bold; padding-left: 10pt; padding-right: 10pt; margin: 0pt;"> Abstract </p>
-	<p class="txt" style="padding: 10pt; text-align: justify; margin: 0pt;"> The objective of the KISADAMA project is to develop an integrated approach for modelling and analysis of the decay mechanism of masonry structures (made by fired clay or sandstone brick) due to salt crystallization. In particular, the idea is to combine, at the (sub)micro-scale, theoretical, numerical and experimental studies to model the interaction between salt crystallization and deformation/damage of the masonry porous material and, then, to pass this information at the macro-scale, in order to develop effective predictive tools useful from the engineer point of view. In this way, a deep understanding of the crystallization processes can be achieved and future damage scenarios can be predicted. </p>
+	<p class="title"> Abstract </p>
+	<p class="txt"> The objective of the KISADAMA project is to develop an integrated approach for modelling and analysis of the decay mechanism of masonry structures (made by fired clay or sandstone brick) due to salt crystallization. In particular, the idea is to combine, at the (sub)micro-scale, theoretical, numerical and experimental studies to model the interaction between salt crystallization and deformation/damage of the masonry porous material and, then, to pass this information at the macro-scale, in order to develop effective predictive tools useful from the engineer point of view. In this way, a deep understanding of the crystallization processes can be achieved and future damage scenarios can be predicted. </p>
 
-	<p class="title" style="font-weight: bold; padding-left: 10pt; padding-right: 10pt; margin: 0pt;"> Related papers: </p>
-	<ul class="txt" style="text-align: justify; padding-top: 10pt; padding-bottom: 10pt; padding-right: 10pt; margin: 0pt;">
+	<p class="title"> Related papers: </p>
+	<ul class="txt" style="padding-bottom: 0px;">
 		<li>Gentilini, C., D'Altri, A. M., Amato, M., Zanotti, P., Favaro, F., & de Miranda, S. (2017). <a class="text" href="Pubblicazioni/KEM.747.512.pdf" target="_blank" download>Salt attack effects on the shear behavior of masonry: preliminary results of an experimental campaign.</a> <em>In Key Engineering Materials</em> (Vol. 747, pp. 512-517). Trans Tech Publications Ltd.
 	</ul>
 
 	</div>
 
-	<footer style="width: 100%; color: white">
-	<div style="content: ""; display: table; clear: both;">
-  		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
-  			<div class="foot" style="height: 50pt; width: auto; position: relative; top: 30pt;">
-    		<p style="font-size: 14pt; color: white; margin:0;">Address</p>
-    		<p style="color: white; margin:0;">University of Trento</p>
-    		<p style="color: white; margin:0;">DICAM, Via Mesiano 77,</p>
-    		<p style="color: white; margin:0;">38123, Trento, Italy</p>
-    		</div>
- 		</div>
- 		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
- 			<div class="foot" style="height: 30pt; width: auto; position: relative; top: 20pt;">
-			<p style="font-size: 14pt; color: white; margin:0;">Phone</p>
-    		<p style="color: white; margin:0;">+39 347-2472996</p>
-    		<p style="font-size: 14pt; color: white; margin:0; padding-top: 10pt;">Quick links</p>
-    		<p style="margin: 0pt; color: white">
+	<div class="footercontainer">
+  		<div class="footerbloccoaddress">
+    		<p class="footertitle">Address</p>
+    		<p class="footertext">University of Trento</p>
+    		<p class="footertext">DICAM, Via Mesiano 77,</p>
+    		<p class="footertext">38123, Trento, Italy</p>
+    	</div>
+    	<div class="footerbloccophone">
+    		<p class="footertitle">Phone</p>
+    		<p class="footertext">+39 347-2472886</p>
+    	</div>
+    	<div class="footerbloccolinks">
+    		<p class="footertitle">Quick links</p>
+    		<p class="footertext">
     			<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
     			<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
     			<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
     		</p>
-    		</div>
-  		</div>
-  		<div style="float: left; width: 33.33%; padding: 0px; height: 110pt; background-color:black; text-align: center">
-  			<div class="foot" style="height: 30pt; width: auto; position: relative; top: 45pt;">
-    		<p style="font-size: 14pt; color: white; margin:0;">Email</p>
-    		<p style="color: white; margin:0;"><a href="mailto:marco.amato@unitn.it">marco.amato@unitn.it</a></p>
-    		</div>
-  		</div>
+    	</div>
+    	<div class="footerbloccoemail">
+    		<p class="footertitle">Email</p>
+    		<p class="footertext"><a href="mailto:marco.amato@unitn.it">marco.amato@unitn.it</a></p>
+    	</div>
 	</div>
-	</footer>
+
+<script>
+	function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className == "topnav") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+	}
+</script>
 
 </body>
 </html>
