@@ -26,13 +26,16 @@
 	.titletext {color: white; font-size: 20pt;}
 	.titleimage {height: 70px;}
 	.mypic {border-radius: 50%; width:200px}
-	.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: row;}
+	.footercontainer {background-color: black; padding: 10px;}
+	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row;}
 	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
 	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center}
 	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center}
 	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center}
 	.footertitle {color: white; margin: 0px; font-size: 14pt;}
 	.footertext {color: white; margin: 0px; font-size: 10pt;}
+	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row;}
+	.footertextupdate {color: white; margin: 0px; font-size: 8pt;}
 
 	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
 	.imgcontainer {display: flex; flex-direction: column; width: auto; margin-left: auto; margin-right: auto; padding: 10px 0px 10px 0px}
@@ -187,6 +190,7 @@
   	</div>
 
 	<div class="footercontainer">
+		<div class="footertop">
   		<div class="footerbloccoaddress">
     		<p class="footertitle">Address</p>
     		<p class="footertext">Czech Technical University in Prague</p>
@@ -209,6 +213,10 @@
     		<p class="footertitle">Email</p>
     		<p class="footertext"><a href="mailto:marco.amato@fsv.cvut.cz">marco.amato@fsv.cvut.cz</a></p>
     	</div>
+    </div>
+    <div class="footerupdate">
+    	<p class="footertextupdate" id="demo"></p>
+  	</div>
 	</div>
 
 <script>
@@ -224,7 +232,7 @@
 	let slideIndex = 0;
 		showSlides();
 
-		function showSlides() {
+	function showSlides() {
 		  let i;
 		  let slides = document.getElementsByClassName("mySlides");
 		  let dots = document.getElementsByClassName("dot");
@@ -239,7 +247,10 @@
 		  slides[slideIndex-1].style.display = "block";  
 		  dots[slideIndex-1].className += " active";
 		  setTimeout(showSlides, 2000); // Change image every 2 seconds
-		}
+	}
+
+	const date = new Date(document.lastModified);
+	document.getElementById("demo").innerHTML = "Last update: " + date;
 </script>
 
 </body>
