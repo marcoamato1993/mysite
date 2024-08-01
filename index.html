@@ -27,15 +27,15 @@
 	.titleimage {height: 70px;}
 	.mypic {border-radius: 50%; width:200px}
 	.footercontainer {background-color: black; padding: 10px;}
-	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row;}
-	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
-	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center}
-	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center}
-	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
+	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
 	.footertitle {color: white; margin: 0px; font-size: 14pt;}
 	.footertext {color: white; margin: 0px; font-size: 10pt;}
-	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row;}
-	.footertextupdate {color: white; margin: 0px; font-size: 8pt;}
+	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
+	.footertextupdate {color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
 
 	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
 	.imgcontainer {display: flex; flex-direction: column; width: auto; margin-left: auto; margin-right: auto; padding: 10px 0px 10px 0px}
@@ -191,31 +191,32 @@
 
 	<div class="footercontainer">
 		<div class="footertop">
-  		<div class="footerbloccoaddress">
-    		<p class="footertitle">Address</p>
-    		<p class="footertext">Czech Technical University in Prague</p>
-    		<p class="footertext">Faculty of Civil Engineering, Thákurova 7,</p>
-    		<p class="footertext">16629, Prague, Czech Republic</p>
-    	</div>
-    	<div class="footerbloccophone">
-    		<p class="footertitle">Phone</p>
-    		<p class="footertext">+39 347-2472886</p>
-    	</div>
-    	<div class="footerbloccolinks">
-    		<p class="footertitle">Quick links</p>
-    		<p class="footertext">
-    			<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
-    			<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
-    			<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
-    		</p>
-    	</div>
-    	<div class="footerbloccoemail">
-    		<p class="footertitle">Email</p>
-    		<p class="footertext"><a href="mailto:marco.amato@fsv.cvut.cz">marco.amato@fsv.cvut.cz</a></p>
-    	</div>
+	  	<div class="footerbloccoaddress">
+	    	<p class="footertitle">Address</p>
+	    	<p class="footertext">Czech Technical University in Prague</p>
+	    	<p class="footertext">Faculty of Civil Engineering, Thákurova 7,</p>
+	    	<p class="footertext">16629, Prague, Czech Republic</p>
+	    </div>
+	    <div class="footerbloccophone">
+	    	<p class="footertitle">Phone</p>
+	    	<p class="footertext">+39 347-2472886</p>
+	    </div>
+	    <div class="footerbloccolinks">
+	    	<p class="footertitle">Find Me Online</p>
+	    	<p class="footertext">
+	    		<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
+	    		<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
+	    		<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
+	    	</p>
+	    </div>
+	    <div class="footerbloccoemail">
+	    	<p class="footertitle">Email</p>
+	    	<p class="footertext"><a href="mailto:marco.amato@fsv.cvut.cz">marco.amato@fsv.cvut.cz</a></p>
+	    </div>
     </div>
     <div class="footerupdate">
-    	<p class="footertextupdate" id="demo"></p>
+	    <p class="footertextupdate" id="demo"></p>
+	    <p class="footertextupdate">Copyright © 2024 by Marco Amato. All rights reserved.</p>
   	</div>
 	</div>
 
@@ -250,7 +251,7 @@
 	}
 
 	const date = new Date(document.lastModified);
-	document.getElementById("demo").innerHTML = "Last update: " + date + " - Copyright © 2024 by Marco Amato. All rights reserved.";
+	document.getElementById("demo").innerHTML = "Last update: " + date;
 </script>
 
 </body>
