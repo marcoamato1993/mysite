@@ -26,15 +26,15 @@
 	.titletext {color: white; font-size: 20pt;}
 	.titleimage {height: 70px;}
 	.footercontainer {background-color: black; padding: 10px;}
-	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row;}
-	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
-	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center}
-	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center}
-	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center}
+	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
+	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
 	.footertitle {color: white; margin: 0px; font-size: 14pt;}
 	.footertext {color: white; margin: 0px; font-size: 10pt;}
-	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row;}
-	.footertextupdate {color: white; margin: 0px; font-size: 8pt;}
+	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
+	.footertextupdate {color: white; margin: 0px; font-size: 8pt; padding-left: 5px; padding-right: 5px;}
 
 	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
 	.blocco1 {display: flex; flex-direction: row; width: 700px; padding: 0px; margin: auto;}
@@ -159,6 +159,7 @@
     </div>
     <div class="footerupdate">
     	<p class="footertextupdate" id="demo"></p>
+    	<p class="footertextupdate">Copyright © 2024 by Marco Amato. All rights reserved.</p>
   	</div>
 	</div>
 
@@ -173,7 +174,7 @@
 	}
 
 	const date = new Date(document.lastModified);
-	document.getElementById("demo").innerHTML = "Last update: " + date + " - Copyright © 2024 by Marco Amato. All rights reserved.";
+	document.getElementById("demo").innerHTML = "Last update: " + date;
 </script>
 
 </body>
