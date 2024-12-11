@@ -33,8 +33,9 @@
 	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
 	.footertitle {color: white; margin: 0px; font-size: 14pt;}
 	.footertext {color: white; margin: 0px; font-size: 10pt;}
-	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
-	.footertextupdate {color: white; margin: 0px; font-size: 8pt; padding-left: 5px; padding-right: 5px;}
+	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap; padding-top: 10px;}
+	.footertextupdate {color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
+	.footertextcopyright {color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
 
 	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
 	.blocco1 {display: flex; flex-direction: row; width: 700px; padding: 0px; margin: auto;}
@@ -44,6 +45,8 @@
 	.bloccosx2 {width: 100px; padding: 0px; margin: auto;}
 	.bloccodx2 {width: auto; padding: 0px 0px 0px 10px; margin: auto;}
 
+	.line{color: white; margin-left: 50px; margin-right: 50px;}
+
 	.title {font-family: helvetica; font-size: 14pt; color: black; font-weight: bold; margin: 0px;}
 	.txt {font-family: helvetica; font-size: 12pt; color: black; margin: 0px; text-align: justify;}
 
@@ -52,10 +55,13 @@
 		.blocco2 {display: flex; flex-direction: row; width: auto; padding-top: 10px; margin: auto;}
 		.container {display: flex; flex-direction: column; width: auto; padding: 10px; margin: auto;}
 		.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: column;}
+		.footertop > * {flex: 1 1 45%;}
 		.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
 		.footerbloccophone {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
 		.footerbloccolinks {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
 		.footerbloccoemail {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: column; flex-wrap: wrap; padding-top: 10px;}
+		.footertextcopyright {padding-top: 10px; color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
 		.titlecontainer {background-color: black; padding: 10px; display: flex; align-items: center; flex-direction: column-reverse;}
 		.bloccotxt {margin: 0px; padding-top: 10px; display: flex; align-self: center; text-align: center;}
 		.bloccoimg {margin: 0px; display: flex; align-self: center;}
@@ -63,6 +69,10 @@
   		.topnav a.icon {
   		display: block;
   		}
+		}
+
+	@media screen and (max-width: 550px) {
+		.footertop {background-color: black; display: flex; justify-content: space-around; flex-direction: column; flex-wrap: wrap;}
 		}
 
 	@media screen and (max-width: 750px) {
@@ -123,33 +133,33 @@
 
 	<div class="footercontainer">
 		<div class="footertop">
-  		<div class="footerbloccoaddress">
-    		<p class="footertitle">Address</p>
-    		<p class="footertext">Czech Technical University in Prague</p>
-    		<p class="footertext">Faculty of Civil Engineering, Thákurova 7,</p>
-    		<p class="footertext">16629, Prague, Czech Republic</p>
-    	</div>
-    	<div class="footerbloccophone">
-    		<p class="footertitle">Phone</p>
-    		<p class="footertext">+39 347-2472886</p>
-    	</div>
-    	<div class="footerbloccolinks">
-    		<p class="footertitle">Find Me Online</p>
-    		<p class="footertext">
-    			<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
-    			<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
-    			<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
-    		</p>
-    	</div>
-    	<div class="footerbloccoemail">
-    		<p class="footertitle">Email</p>
-    		<p class="footertext"><a href="mailto:marco.amato@fsv.cvut.cz">marco.amato@fsv.cvut.cz</a></p>
-    	</div>
+	  	<div class="footerbloccoaddress">
+	    	<p class="footertitle">Address</p>
+	    	<p class="footertext">Czech Technical University in Prague</p>
+	    	<p class="footertext">Faculty of Civil Engineering, Thákurova 7,</p>
+	    	<p class="footertext">16629, Prague, Czech Republic</p>
+	    </div>
+	    <div class="footerbloccophone">
+	    	<p class="footertitle">Phone</p>
+	    	<p class="footertext">+39 347-2472886</p>
+	    </div>
+	    <div class="footerbloccolinks">
+	    	<p class="footertitle">Find Me Online</p>
+	    	<p class="footertext">
+	    		<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
+	    		<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
+	    		<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
+	    	</p>
+	    </div>
+	    <div class="footerbloccoemail">
+	    	<p class="footertitle">Email</p>
+	    	<p class="footertext"><a href="mailto:marco.amato@fsv.cvut.cz">marco.amato@fsv.cvut.cz</a></p>
+	    </div>
     </div>
+    <hr class="line">
     <div class="footerupdate">
-    	<p class="footertextupdate" id="demo"></p>
-    	<p class="footertextupdate">Copyright © 2024 by Marco Amato. All rights reserved.</p>
-    	<a href="https://www.shinystat.com/it/" target="_blank"><img src="//www.shinystat.com/cgi-bin/shinystat.cgi?USER=SS-51143761-9d313" alt="Statistiche accessi" class="footertextupdate" /></a>
+	    <p class="footertextupdate" id="demo"></p>
+	    <p class="footertextcopyright">Copyright © 2024 by Marco Amato. All rights reserved.</p>
   	</div>
 	</div>
 
