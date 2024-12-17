@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Marco Amato - About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/19a313026c.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="Image_Location/favicon.ico"/>
+<link rel="stylesheet" href="Image_Location/academicons-1.9.2/css/academicons.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+	a:link {color: white; text-decoration: none; transition: 0.7s;}
+	a:visited {color: white; text-decoration: none; transition: 0.7s;}
+	a:hover {color: orange; text-decoration: none; transition: 0.7s;}
+	a:active {color: white; text-decoration: none; transition: 0.7s;}
+	.text:link {color: blue; text-decoration: none; transition: 0.7s;}
+	.text:hover {color: blue; text-decoration: underline; transition: 0.7s;}
+	.text:visited {color: blue; text-decoration: none; transition: 0.7s;}
+	.text:active {color: blue; text-decoration: none; transition: 0.7s;}
+
+	.body {margin: 0px; font-family: helvetica;}
+	.topnav {overflow: hidden; font-size: 14pt; padding: 10px; background-color: lightgray; text-align: center; color: white; position: relative;}
+	.topnav .icon {display: none;}
+	.menu {font-size: 14pt; padding: 10px;}
+	.titlecontainer {background-color: black; padding: 10px; display: flex; justify-content: space-between; flex-direction: row;}
+	.bloccotxt {margin: 0px; display: flex; align-self: center;}
+	.bloccoimg {margin: 0px; display: flex; align-self: center;}
+	.titletext {color: white; font-size: 20pt;}
+	.titleimage {height: 70px;}
+	.mypic {border-radius: 50%; width:200px}
+	.mypic2 {border-radius: 2.5%; width:300px}
+	.footercontainer {background-color: black; padding: 10px;}
+	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
+	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccophone {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccolinks {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footerbloccoemail {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
+	.footertitle {color: white; margin: 0px; font-size: 14pt;}
+	.footertext {color: white; margin: 0px; font-size: 10pt;}
+	.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap; padding-top: 10px;}
+	.footertextupdate {color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
+	.footertextcopyright {color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
+
+	.container {display: flex; flex-direction: column; width: 700px; padding: 10px; margin: auto;}
+	.imgcontainer {display: flex; flex-direction: column; width: auto; margin-left: auto; margin-right: auto; padding: 10px 0px 10px 0px}
+	.blocco1 {display: flex; flex-direction: row; width: 700px; padding: 0px; margin: auto;}
+	.bloccosx1 {width: 200px; padding: 0px; margin: auto;}
+	.bloccosx2 {width: 300px; padding: 0px; margin: auto;}
+	.bloccodx1 {width: auto; padding: 0px 0px 0px 10px; margin: auto;}
+	.bloccodx2 {width: auto; padding: 0px 10px 0px 0px; margin: auto;}
+	.blocco2 {display: flex; flex-direction: column; width: 700px; padding-top: 10px; margin: auto;}
+	.bloccotop2 {width: auto; padding: 0px; margin: 0px;}
+	.bloccobottom2 {width: auto; padding: 0px; margin: auto;}
+	.blocco3 {display: flex; flex-direction: column; width: 700px; padding-top: 10px; margin: auto;}
+	.bloccocen3 {padding: 10px; margin: auto; border-radius: 10px; background-color: lightgray;}
+
+	.line{height: 0.5px; background-color: gray; border: none; margin-left: 50px; margin-right: 50px;}
+
+	.head {font-family: helvetica; font-size: 20pt; color: black; font-weight: normal; text-align: left; margin: 0px; padding-bottom: 0px}
+	.title {font-family: helvetica; font-size: 14pt; color: black; font-weight: normal; margin: 0px; text-align: left;}
+	.txt {font-family: helvetica; font-size: 12pt; color: black; margin: 0px; text-align: justify;}
+
+	.mySlides {display: none;}
+	.dot {height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+	.active { background-color: #717171;}
+	.fade {animation-name: fade; animation-duration: 1.5s;}
+	@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+	@media screen and (max-width: 760px) {
+		.blocco1 {display: flex; flex-direction: column; width: auto; padding: 0px; margin: auto;}
+		.bloccodx1 {width: auto; padding: 0px; margin: auto;}
+		.blocco2 {display: flex; flex-direction: column; width: auto; padding-top: 10px; margin: 0px;}
+		.blocco3 {display: flex; flex-direction: column; width: auto; padding-top: 10px; margin: auto;}
+		.container {display: flex; flex-direction: column; width: auto; padding: 10px; margin: auto;}
+		.footercontainer {background-color: black; padding: 10px; display: flex; justify-content: space-around; flex-direction: column;}
+		.footertop > * {flex: 1 1 45%;}
+		.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccophone {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccolinks {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerbloccoemail {padding-top: 10px; display: flex; flex-direction: column; text-align: center; align-self: center}
+		.footerupdate {background-color: black; display: flex; justify-content: space-around; flex-direction: column; flex-wrap: wrap; padding-top: 10px;}
+		.footertextcopyright {padding-top: 10px; color: white; margin: 0px; font-size: 8pt; text-align: center; padding-left: 5px; padding-right: 5px;}
+		.titlecontainer {background-color: black; padding: 10px; display: flex; align-items: center; flex-direction: column-reverse;}
+		.bloccotxt {margin: 0px; padding-top: 10px; display: flex; align-self: center; text-align: center;}
+		.bloccoimg {margin: 0px; display: flex; align-self: center;}
+  		.topnav a:not(:first-child) {display: none;}
+  		.topnav a.icon {
+  		display: block;
+  		}
+		}
+
+	@media screen and (max-width: 550px) {
+		.footertop {background-color: black; display: flex; justify-content: space-around; flex-direction: column; flex-wrap: wrap;}
+		}
+
+	@media screen and (min-width: 450px) and (max-width: 760px) {
+		.imgcontainer {display: flex; flex-direction: column; width: 450px; margin-left: auto; margin-right: auto;}
+		}
+
+	@media screen and (max-width: 450px) {
+		.imgcontainer {display: flex; flex-direction: column; width: 100%; margin-left: auto; margin-right: auto;}
+		}
+
+	@media screen and (max-width: 760px) {
+  		.topnav.responsive {position: relative;}
+  		.topnav.responsive .icon {position: relative}
+  		.topnav.responsive a{
+    	display: block;
+    	text-align: center;
+  		}
+		}
+
+</style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2N49DPZK2M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2N49DPZK2M');
+</script>
+
+<body class="body">
+
+	<div class="titlecontainer">
+		<div class="bloccotxt">
+			<div class="titletext">Solid and Structural Mechanics Group</div>
+		</div>
+		<div class="bloccoimg">
+			<a href="https://www.cvut.cz/en/faculty-of-civil-engineering" target="_blank">
+				<img class="titleimage" src="Image_Location/logo_cvut_en.png">
+			</a>
+		</div>
+	</div>
+
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="icon" >
+    		<i class="fa fa-bars" onclick="myFunction()"></i>
+  		</a>
+  		<a class="menu" href="index.html">Home</a>
+  		<a class="menu" href="Research.html">Research</a>
+  		<a class="menu" href="Teaching.html">Teaching</a>
+  		<a class="menu" href="Awards.html">Awards</a>
+  		<a class="menu" href="Publications.html">Publications</a>
+  		<a class="menu" href="Conferences.html">Conferences</a>
+  		<a class="menu" style="color: gray" href="About Me.html">About Me</a>
+	</div>
+
+	<div class="container">
+		<div class="blocco1">
+				<div class="bloccosx1">
+				<img class="mypic" src="Image_Location/laurea.jpeg">
+				</div>
+				<div class="bloccodx1">
+				<p class="txt" style="padding-top: 10px;">Marco Amato was born in Bologna on 11 January 1993. His passion for structural mechanics began at the Istituto Tecnico per Geometri Pier-Crescenzi Pacinotti, where he first encountered the principles of solid and structural analysis. This interest led him to pursue a bachelor's degree in Civil Engineering at the University of Bologna, during which he conducted experimental research on masonry and mortar. His thesis, <em>Experimental shear test on masonry samples: investigation on the role of prestress</em>, reflected his early focus on understanding material properties through hands-on testing.</p>
+				<p class="txt" style="padding-top: 10px;">Building on this foundation, Marco earned his master’s degree in Civil Engineering at the University of Bologna, where he completed all his coursework and examinations. During this time, he had the opportunity to conduct research as a visiting scholar at Florida Atlantic University in the United States. This period abroad was instrumental in shaping his thesis, <em>The Galerkin method for vibrational problems on stepped structures</em>, where he applied advanced analytical methods to study vibrational behaviors in structural elements like beams and plates. After completing his research in Florida, Marco returned to Bologna to defend his thesis and graduate, further solidifying his expertise in computational and structural mechanics.</p>
+				</div>
+		</div>
+
+		<div class="blocco1">
+				<div class="bloccodx2">
+				<p class="txt" style="padding-top: 10px;">Marco went on to complete a Ph.D. in Solid and Structural Mechanics at the University of Trento, where he investigated configurational forces in elastic solids. His doctoral research combined theoretical modeling with computational simulations, laying the groundwork for understanding these forces in both static and dynamic regimes. His thesis, <em>Elastic solids under frictionless rigid contact and configurational forces</em>, was supervised by prominent researchers, including Prof. Francesco Dal Corso and Prof. Davide Bigoni, and was supported by advanced numerical modeling in software like ABAQUS.</p>
+				<p class="txt" style="padding-top: 10px;">Currently, Marco is a postdoctoral researcher at the Czech Technical University in Prague, where his focus has shifted to the study of magnetorheological elastomers (MREs), a class of smart materials whose mechanical properties can be tuned using magnetic fields. He is actively involved in developing variationally consistent models for these materials, tackling challenges such as large deformations and instability phenomena. His work includes implementing these models in the finite element software OOFEM, enabling precise simulations for practical applications in engineering.</p>
+				<p class="txt" style="padding-top: 10px;">Marco’s journey reflects a strong commitment to advancing the field of solid and structural mechanics. His research interests center on nonlinear material behaviors, configurational forces, and the interplay of magnetic and elastic phenomena, commonly referred to as magnetoelasticity. By blending analytical rigor, computational expertise, and experimental insights, Marco continues to contribute to a deeper understanding of how materials respond to complex loadings, driving innovation in both fundamental research and applied engineering.</p>
+				</div>
+				<div class="bloccosx2">
+				<img class="mypic2" src="Image_Location/poster.jpg">
+				</div>
+	</div>
+	<p class="txt" style="padding-top: 10px;">Explore my complete professional profile – <a href="PhD_CV_Marco.pdf" download class="text">click here to download my CV</a></p>
+	</div>
+
+<div class="footercontainer">
+		<div class="footertop">
+	  	<div class="footerbloccoaddress">
+	    	<p class="footertitle">Address</p>
+	    	<p class="footertext">Czech Technical University in Prague</p>
+	    	<p class="footertext">Faculty of Civil Engineering, Thákurova 7,</p>
+	    	<p class="footertext">16629, Prague, Czech Republic</p>
+	    </div>
+	    <div class="footerbloccophone">
+	    	<p class="footertitle">Phone</p>
+	    	<p class="footertext">+39 347-2472886</p>
+	    </div>
+	    <div class="footerbloccolinks">
+	    	<p class="footertitle">Find Me Online</p>
+	    	<p class="footertext">
+	    		<a href="https://scholar.google.com/citations?user=I7vJRpQAAAAJ&hl=it" target="_blank"><i class="ai ai-google-scholar ai-2x"></i></a>
+	    		<a href="https://www.scopus.com/authid/detail.uri?authorId=57219242920" target="_blank"><i class="ai ai-scopus ai-2x"></i></a>
+	    		<a href="https://www.researchgate.net/profile/Marco-Amato-2" target="_blank"><i class="ai ai-researchgate ai-2x"></i></a>
+	    		<a href="https://www.linkedin.com/in/marco-amato-834246159/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+	    		<a href="https://orcid.org/my-orcid?orcid=0000-0003-3764-3889" target="_blank"><i class="fa-brands fa-orcid fa-2x"></i></a>
+	    	</p>
+	    </div>
+	    <div class="footerbloccoemail">
+	    	<p class="footertitle">Email</p>
+	    	<p class="footertext"><a href="mailto:marco.amato@fsv.cvut.cz">marco.amato@fsv.cvut.cz</a></p>
+	    </div>
+    </div>
+    <hr class="line">
+    <div class="footerupdate">
+	    <p class="footertextupdate" id="demo"></p>
+	    <p class="footertextcopyright">Copyright © 2024 by Marco Amato. All rights reserved.</p>
+  	</div>
+	</div>
+
+<script>
+	function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className == "topnav") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+	}
+
+	const date = new Date(document.lastModified);
+	document.getElementById("demo").innerHTML = "Last update: " + date;
+
+	src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=SS-51143761-9d313"
+
+</script>
+
+</body>
+</html>
