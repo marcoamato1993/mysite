@@ -47,7 +47,13 @@
 	.bloccotop2 {width: auto; padding: 0px; margin: 0px;}
 	.bloccobottom2 {width: auto; padding: 0px; margin: auto;}
 	.blocco3 {display: flex; flex-direction: column; width: 700px; padding-top: 10px; margin: auto;}
-	.bloccocen3 {padding: 10px; margin: auto; border-radius: 10px; background-color: lightgray;}
+	.bloccocen3 {margin: auto; border-radius: 10px; background-color: lightgray; overflow: hidden;}
+	.newsbox {max-height: 400px; overflow-y: auto; padding: 10px; padding-right: 5px; padding-top: 0px;}
+
+	.newsbox::-webkit-scrollbar {width: 15px;}
+	.newsbox::-webkit-scrollbar-track {background: transparent;}
+	.newsbox::-webkit-scrollbar-thumb {background: #888; border-radius: 20px; border: 3px solid lightgray;}
+	.newsbox::-webkit-scrollbar-thumb:hover {background: #666;}
 
 	.line{height: 0.5px; background-color: gray; border: none; margin-left: 50px; margin-right: 50px;}
 
@@ -206,13 +212,53 @@
 
   	<div class="blocco3">
   		<div class="bloccocen3">
+  			<div style="height:10px;"></div>
+  			<div class="newsbox">
 	  		<p class="title">News:</p>
-	  	<p class="txt" style="padding-top: 10px;"><em> May 2026</em></p>
-			<p class="txt">Marco has recently published a new article in <em>Computer Methods in Applied Mechanics and Engineering</em> introducing a novel regularization approach for the third medium contact method in finite strain settings. The proposed formulation improves robustness and implementation efficiency by enabling first-order finite element discretizations without additional degrees of freedom, offering new perspectives for challenging contact problems such as topology optimization..</p>
-	  	<p class="txt" style="padding-top: 10px;"><em> March 2026</em></p>
-	  	<p class="txt">Marco delivered the doctoral course <em>An Introduction to Nonlinear Solid Mechanics</em> as an invited lecturer at the University of Palermo. The course was very well received, attracting strong engagement from both PhD students and faculty, and generated highly positive feedback, making it likely to become a recurring annual appointment.</p>
-			<p class="txt" style="padding-top: 10px;"><em> September 2025</em></p>
-			<p class="txt">Marco presented his research <em>Hard-magnetic soft materials: theory and implementation</em> at the <em>YIC - ECCOMAS 8th Young Investigators Conference</em> in Pescara, Italy. The event brought together early-career researchers and offered a stimulating environment to exchange ideas and explore new directions in computational mechanics and related fields.</p>
+	  			<p class="txt" style="padding-top: 10px;"><em> May 2026</em></p>
+					<p class="txt">Marco has recently published a new article in <em>Computer Methods in Applied Mechanics and Engineering</em> introducing a novel regularization approach for the third medium contact method in finite strain settings. The proposed formulation improves robustness and implementation efficiency by enabling first-order finite element discretizations without additional degrees of freedom, offering new perspectives for challenging contact problems such as topology optimization.</p>
+					<p class="txt" style="padding-top: 10px;"><em> April 2026</em></p>
+					<p class="txt">Marco has been awarded funding through the <em>Iniciační Fond FSv</em> program of the Faculty of Civil Engineering at the Czech Technical University in Prague to support the resubmission of a <em>Marie Skłodowska-Curie Postdoctoral Fellowship</em> proposal. The funding will contribute to refining the project, strengthening international collaborations, and enhancing its competitiveness within the highly selective European fellowship program.</p>
+					<p class="txt" style="padding-top: 10px;"><em> March 2026</em></p>
+					<p class="txt">Marco delivered the doctoral course <em>An Introduction to Nonlinear Solid Mechanics</em> as an invited lecturer at the University of Palermo. The course attracted strong participation from PhD students and faculty and provided an excellent opportunity for discussion on nonlinear solid mechanics.</p>
+					<p class="txt" style="padding-top: 10px;"><em> September 2025</em></p>
+					<p class="txt">Marco presented his research titled <em>Hard-magnetic soft materials: theory and implementation</em> at the <em>YIC - ECCOMAS 8th Young Investigators Conference</em> in Pescara, Italy. The event brought together early-career researchers and offered a stimulating environment to exchange ideas and explore new directions in computational mechanics and related fields.</p>
+					<p class="txt" style="padding-top: 10px;"><em> June 2025</em></p>
+					<p class="txt">Marco presented his research titled <em>Hard-magnetic soft materials: theory and implementation</em> at the <em>1st HICOMP Conference - Hellenic-Italian Conference on Computational Mechanics, Biomechanics and Mechanics of Materials</em> held in Rhodes Island, Greece. The conference provided an engaging platform to share recent advances and foster collaboration within the theoretical and computational mechanics community.</p>
+					<p class="txt" style="padding-top: 10px;"><em> June 2025</em></p>
+					<p class="txt">In collaboration with Martin Horák, Marco is co-organizing the <em>RAMSS 2025 Workshop on Recent Advances in the Mechanics of Soft Solids</em>, to be held in Prague. The workshop will bring together researchers to discuss recent theoretical, computational, and experimental developments in the mechanics of soft materials.</p>
+					<p class="txt" style="padding-top: 10px;"><em> April 2025</em></p>
+					<p class="txt">Marco’s PhD thesis, <em>Elastic Solids Under Frictionless Rigid Contact and Configurational Force</em>, has been selected as one of the finalists for the 2024 GMA-AIMETA Best Doctoral Thesis Award in Mechanics of Materials. While not the winner, being selected as one of the best national candidates is an honor and a recognition of his contributions to the study of configurational forces in nonlinear elasticity.</p>
+					<p class="txt" style="padding-top: 10px;"><em> April 2025</em></p>
+					<p class="txt">Marco has been invited to present his doctoral work, <em>Elastic Solids Under Frictionless Rigid Contact and Configurational Force</em>, at the Nečas Seminar on Continuum Mechanics, organized by the Faculty of Mathematics and Physics, Charles University. His presentation focused on the extension of the <em>J</em>-integral to frictionless rigid contact problems in nonlinear elasticity, exploring how configurational forces influence the mechanical response of elastic solids under such conditions.</p>
+					<p class="txt" style="padding-top: 10px;"><em> April 2025</em></p>
+					<p class="txt">Marco was awarded funding from the <em>Iniciační Fond FSv</em>, a competitive program supporting early-career researchers and international scientific collaboration. The grant will support a research visit by Prof. Luis Dorfmann and the development of analytical and numerical models for magnetoelastic materials, strengthening ongoing collaborations in the field of magnetoelasticity.</p>
+					<p class="txt" style="padding-top: 10px;"><em> June 2024</em></p>
+					<p class="txt">Marco presented his research titled <em>Efficient numerical approach to modelling of hard magnetic soft beams</em> at the <em>ICNEM – 26th International Conference on Nonlinear Elasticity in Materials</em>. The conference brought together researchers working on nonlinear elasticity and advanced materials, providing an excellent opportunity to discuss recent developments and exchange ideas within the international mechanics community.</p>
+					<p class="txt" style="padding-top: 10px;"><em> May 2024</em></p>
+					<p class="txt">Marco has published a new article in the <em>Journal of the Mechanics and Physics of Solids</em> on the mechanics of homogeneous elastic solids in frictionless contact with rigid constraints. The study demonstrates that a path-independent <em>J</em>-integral is equal to the energy release rate <em>G</em>, establishing a connection between configurational and Newtonian forces in nonlinear elasticity.</p>
+					<p class="txt" style="padding-top: 10px;"><em> May 2024</em></p>
+					<p class="txt">Marco was awarded the degree of Doctor of Philosophy (Ph.D.) by the University of Trento, completing his doctoral research on frictionless contact problems and configurational forces in nonlinear elasticity.</p>
+					<p class="txt" style="padding-top: 10px;"><em> January 2024</em></p>
+					<p class="txt">Marco has been selected as a postdoctoral fellow at the Czech Technical University in Prague. This appointment provides opportunities for further research and collaboration in solid mechanics and related fields.</p>
+					<p class="txt" style="padding-top: 10px;"><em> September 2023</em></p>
+					<p class="txt">Marco has been confirmed as teaching assistant for the academic year 2023/2024 for the undergraduate course <em>Scienza delle Costruzioni</em> (Solid Mechanics) at the School of Engineering, University of Trento, Italy.</p>
+					<p class="txt" style="padding-top: 10px;"><em> June 2023</em></p>
+					<p class="txt">Marco presented his research titled <em>Elastic Solids Moving Along Frictionless Constraints via Configurational Forces</em> at the workshop <em>Mathematics and Mechanics of Solids and Structures: Scientific Challenges and Methodologies for Future Societal Development</em> in Aberystwyth, Wales (UK). The workshop provided an engaging platform to discuss recent advances in solid and structural mechanics and to foster collaboration among researchers from different scientific disciplines.</p>
+					<p class="txt" style="padding-top: 10px;"><em> July 2022</em></p>
+					<p class="txt">Marco has been confirmed as teaching assistant for the academic year 2022/2023 for the undergraduate course <em>Scienza delle Costruzioni</em> (Solid Mechanics) and the graduate course <em>Teoria e Dinamica delle Strutture</em> (Theory and Dynamics of Structures) at the School of Engineering, University of Trento, Italy.</p>
+					<p class="txt" style="padding-top: 10px;"><em> December 2021</em></p>
+					<p class="txt">Marco has been appointed as teaching assistant for the academic year 2021/2022 for the graduate course <em>Meccanica Computazionale delle Strutture 2</em> (Computational Mechanics 2) at the School of Engineering, University of Trento, Italy.</p>
+					<p class="txt" style="padding-top: 10px;"><em> June 2021</em></p>
+					<p class="txt">Marco has been appointed as teaching assistant for the academic year 2021/2022 for the undergraduate course <em>Scienza delle Costruzioni</em> (Solid Mechanics) and confirmed for the graduate course <em>Teoria e Dinamica delle Strutture</em> (Theory and Dynamics of Structures) at the School of Engineering, University of Trento, Italy.</p>
+					<p class="txt" style="padding-top: 10px;"><em> November 2020</em></p>
+					<p class="txt">Marco has been appointed as teaching assistant for the academic year 2020/2021 for the graduate course <em>Teoria e Dinamica delle Strutture</em> (Theory and Dynamics of Structures) at the School of Engineering, University of Trento, Italy.</p>
+					<p class="txt" style="padding-top: 10px;"><em> October 2020</em></p>
+					<p class="txt">Marco has started his Ph.D. studies with the Solid and Structural Mechanics Group at the University of Trento.</p>
+					<p class="txt" style="padding-top: 10px;"><em> July 2020</em></p>
+					<p class="txt">Marco was awarded a Master's degree in Civil Engineering by the University of Bologna.</p>
+	  	</div>
+	  	<div style="height:10px;"></div>
 	  	</div>
   	</div>
   	</div>
