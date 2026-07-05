@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
@@ -9,49 +13,48 @@
 
 <url>
   <loc>https://marcoamato1993.github.io/mysite/index.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:05+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Research.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Teaching.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Awards.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Publications.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Talks%20And%20Events.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Academic%20Service.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/About%20Me.html</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://marcoamato1993.github.io/mysite/Marco_CV.pdf</loc>
-  <lastmod>2026-04-02T17:14:04+00:00</lastmod>
+  <lastmod>2026-07-05T16:33:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
 
 </urlset>
