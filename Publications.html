@@ -171,112 +171,100 @@
 <script>
 
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className == "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+    const nav = document.getElementById("myTopnav");
+    nav.classList.toggle("responsive");
 }
 
-const date = new Date(document.lastModified);
-document.getElementById("demo").innerHTML = "Last update: " + date;
-
-src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=SS-51143761-9d313"
+src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=SS-51143761-9d313";
 
 fetch("publications.json")
-.then(response => response.json())
-.then(data => {
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Unable to load publications.json");
+        }
+        return response.json();
+    })
+    .then(data => {
 
-    function stampaPubblicazioni(tipo, idLista) {
+        // Mostra la data dell'ultimo aggiornamento del database
+        document.getElementById("demo").textContent =
+            "Last update: " + (data.last_update || "Unknown");
 
-        const list = document.getElementById(idLista);
+        const publications = data.publications || [];
 
-        if (!list) return;
+        function stampaPubblicazioni(tipo, idLista) {
 
-        const pubs = data
-            .filter(pub => pub.type === tipo)
-            .sort((a, b) => {
+            const list = document.getElementById(idLista);
+            if (!list) return;
 
-	    const dateA = new Date(
-	        Number(a.year || 0),
-	        Number(a.month || 1) - 1,
-	        Number(a.day || 1)
-	    );
+            const pubs = publications
+                .filter(pub => pub.type === tipo)
+                .sort((a, b) => {
 
-	    const dateB = new Date(
-	        Number(b.year || 0),
-	        Number(b.month || 1) - 1,
-	        Number(b.day || 1)
-	    );
+                    const dateA = new Date(
+                        Number(a.year || 0),
+                        Number(a.month || 1) - 1,
+                        Number(a.day || 1)
+                    );
 
-	    return dateB - dateA;
+                    const dateB = new Date(
+                        Number(b.year || 0),
+                        Number(b.month || 1) - 1,
+                        Number(b.day || 1)
+                    );
 
-		})
+                    return dateB - dateA;
+                });
 
-        let html = "";
+            list.innerHTML = pubs.map(pub => {
 
-        pubs.forEach(pub => {
+                const authors = (pub.authors || "").replace(" & ", ", & ");
 
-            const authors = pub.authors.replace(" & ", ", & ");
+                switch (pub.type) {
 
-            switch (pub.type) {
-
-                // --------------------------------------------------
-                // JOURNAL ARTICLES
-                // --------------------------------------------------
-
-                case "journal-article":
-
-                    html += `
+                    case "journal-article":
+                        return `
 <li>
 ${authors} (${pub.year}).
 <a class="text" href="${pub.url}" target="_blank">${pub.title}.</a>
 <em>${pub.journal}</em>${pub.volume ? `, ${pub.volume}` : ""}${pub.issue ? `(${pub.issue})` : ""}${pub.pages ? `, ${pub.pages}` : ""}.
 </li>`;
-                    break;
 
-                // --------------------------------------------------
-                // BOOK CHAPTERS
-                // --------------------------------------------------
-
-                case "book-chapter":
-
-                    html += `
+                    case "book-chapter":
+                        return `
 <li>
 ${authors} (${pub.year}).
 <a class="text" href="${pub.url}" target="_blank">${pub.title}.</a>
-<em>In ${pub.book_title}: ${pub.book_subtitle}</em>${pub.pages ? ` (pp. ${pub.pages})` : ""}. ${pub.publisher}.
+<em>In ${pub.book_title}${pub.book_subtitle ? `: ${pub.book_subtitle}` : ""}</em>${pub.pages ? ` (pp. ${pub.pages})` : ""}. ${pub.publisher}.
 </li>`;
-                    break;
 
-                // --------------------------------------------------
-                // CONFERENCE PAPERS
-                // --------------------------------------------------
-
-                case "conference-paper":
-
-                    html += `
+                    case "conference-paper":
+                        return `
 <li>
 ${authors} (${pub.year}).
 <a class="text" href="${pub.url}" target="_blank">${pub.title}.</a>
 <em>In ${pub.journal}</em>${pub.volume ? ` (Vol. ${pub.volume}` : ""}${pub.pages ? `, pp. ${pub.pages}` : ""}${pub.volume ? ")" : ""}. ${pub.publisher}.
 </li>`;
-                    break;
 
-            }
+                    default:
+                        return "";
+                }
 
-        });
+            }).join("");
 
-        list.innerHTML = html;
-    }
+        }
 
-    stampaPubblicazioni("journal-article", "journal-article");
-    stampaPubblicazioni("book-chapter", "book-chapter");
-    stampaPubblicazioni("conference-paper", "conference-paper");
+        stampaPubblicazioni("journal-article", "journal-article");
+        stampaPubblicazioni("book-chapter", "book-chapter");
+        stampaPubblicazioni("conference-paper", "conference-paper");
 
-})
-.catch(err => console.error(err));
+    })
+    .catch(error => {
+        console.error(error);
+
+        document.getElementById("demo").textContent =
+            "Unable to load publication database.";
+    });
 
 </script>
 
