@@ -1,7 +1,12 @@
 {
+<<<<<<< Updated upstream
     "last_update": "2026-07-17 07:18 UTC",
+=======
+    "last_update": "2026-07-17 18:48 UTC",
+>>>>>>> Stashed changes
     "publications": [
         {
+            "id": "Faltus2026Deformation",
             "type": "journal-article",
             "title": "Deformation gradient averaging regularization for third medium contact",
             "authors": "Faltus, O., Amato, M. & Horák, M.",
@@ -21,6 +26,7 @@
             "url": "https://doi.org/10.1016/j.cma.2026.119072"
         },
         {
+            "id": "DalCorso2024Elastic",
             "type": "journal-article",
             "title": "Elastic solids under frictionless rigid contact and configurational force",
             "authors": "Dal Corso, F., Amato, M. & Bigoni, D.",
@@ -40,6 +46,7 @@
             "url": "https://doi.org/10.1016/j.jmps.2024.105673"
         },
         {
+            "id": "Bigoni2022Configurational",
             "type": "book-chapter",
             "title": "Configurational Forces in Penetration Processes",
             "authors": "Bigoni, D., Amato, M. & Dal Corso, F.",
@@ -59,6 +66,7 @@
             "url": "https://doi.org/10.1007/978-3-030-92339-6_19"
         },
         {
+            "id": "Elishakoff2021Flutter",
             "type": "journal-article",
             "title": "Flutter of a beam in supersonic flow: truncated version of Timoshenko–Ehrenfest equation is sufficient",
             "authors": "Elishakoff, I. & Amato, M.",
@@ -78,6 +86,7 @@
             "url": "https://doi.org/10.1007/s10999-021-09537-x"
         },
         {
+            "id": "Amato2021Flutter",
             "type": "journal-article",
             "title": "Flutter of a Multicomponent Beam in a Supersonic Flow",
             "authors": "Amato, M., Elishakoff, I. & Reddy, J. N.",
@@ -97,6 +106,7 @@
             "url": "https://doi.org/10.2514/1.j060631"
         },
         {
+            "id": "Elishakoff2021Galerkins",
             "type": "journal-article",
             "title": "Galerkin’s method revisited and corrected in the problem of Jaworski and Dowell",
             "authors": "Elishakoff, I., Amato, M. & Marzani, A.",
@@ -116,6 +126,7 @@
             "url": "https://doi.org/10.1016/j.ymssp.2020.107604"
         },
         {
+            "id": "Elishakoff2021Rigorous",
             "type": "journal-article",
             "title": "Rigorous implementation of the Galerkin method for stepped structures needs generalized functions",
             "authors": "Elishakoff, I., Amato, M., Ankitha, A. P. & Marzani, A.",
@@ -135,6 +146,7 @@
             "url": "https://doi.org/10.1016/j.jsv.2020.115708"
         },
         {
+            "id": "Gentilini2017Salt",
             "type": "conference-paper",
             "title": "Salt Attack Effects on the Shear Behavior of Masonry: Preliminary Results of an Experimental Campaign",
             "authors": "Gentilini, C., D'Altri, A. M., Amato, M., Zanotti, P., Favaro, F. & de Miranda, S.",
