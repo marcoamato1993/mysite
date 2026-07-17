@@ -1,6 +1,7 @@
 import json
 import requests
 import time
+import re
 from datetime import datetime, timezone
 
 ORCID = "0000-0003-3764-3889"
@@ -67,6 +68,7 @@ for group in works:
 
         publications.append({
 
+            "id": "",
             "type": work.get("type", ""),
             "title": get(work, "title", "title", "value"),
             "authors": "",
@@ -263,10 +265,36 @@ for group in works:
     url = cross.get("URL", "")
 
     # -----------------------------------------------------
+    # Identifier
+    # -----------------------------------------------------
+
+    if cross.get("author"):
+        first_author = cross["author"][0].get("family", "Unknown")
+    else:
+        first_author = "Unknown"
+
+    # Rimuove tutto tranne lettere e numeri
+    # Esempio:
+    # "Dal Corso" -> "DalCorso"
+    # "García-López" -> "GarcíaLópez"
+    # "O'Connor" -> "OConnor"
+    first_author = re.sub(r"[^\w]", "", first_author, flags=re.UNICODE)
+
+    # Prima parola significativa del titolo
+    if title:
+        first_word = re.sub(r"[^\w]", "", title.split()[0], flags=re.UNICODE)
+    else:
+        first_word = ""
+
+    identifier = f"{first_author}{year}{first_word}"
+
+    # -----------------------------------------------------
     # Save
     # -----------------------------------------------------
 
     publications.append({
+
+        "id": identifier,
 
         "type": pub_type,
 
