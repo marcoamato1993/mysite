@@ -25,7 +25,7 @@
 	.bloccoimg {margin: 0px; display: flex; align-self: center;}
 	.titletext {color: white; font-size: 20pt;}
 	.titleimage {height: 70px;}
-	.mypic {border-radius: 50%; width:200px}
+	.mypic {border-radius: 50%; width: 200px; height: auto;}
 	.footercontainer {background-color: black; padding: 10px;}
 	.footertop {background-color: black; padding-bottom: 10px; display: flex; justify-content: space-around; flex-direction: row; flex-wrap: wrap;}
 	.footerbloccoaddress {display: flex; flex-direction: column; text-align: center; align-self: center; padding-left: 5px; padding-right: 5px;}
@@ -47,7 +47,7 @@
 	.bloccotop2 {width: auto; padding: 0px; margin: 0px;}
 	.bloccobottom2 {width: auto; padding: 0px; margin: auto;}
 	.blocco3 {display: flex; flex-direction: column; width: 700px; padding-top: 10px; margin: auto;}
-	.bloccocen3 {margin: auto; border-radius: 10px; background-color: lightgray; overflow: hidden;}
+	.bloccocen3 {margin: auto; border-radius: 10px; background-color: lightgray; overflow: hidden; width: 100%; box-sizing: border-box;}
 	.newsbox {max-height: 400px; overflow-y: auto; padding: 10px; padding-right: 5px; padding-top: 0px;}
 
 	.newsbox::-webkit-scrollbar {width: 15px;}
@@ -69,6 +69,7 @@
 
 	@media screen and (max-width: 835px) {
 		.blocco1 {display: flex; flex-direction: column; width: auto; padding: 0px; margin: auto;}
+		.bloccosx1 {width: auto; display: flex; justify-content: center;}
 		.bloccodx1 {width: auto; padding: 0px; margin: auto;}
 		.blocco2 {display: flex; flex-direction: column; width: auto; padding-top: 10px; margin: 0px;}
 		.blocco3 {display: flex; flex-direction: column; width: auto; padding-top: 10px; margin: auto;}
@@ -101,6 +102,12 @@
 	@media screen and (max-width: 450px) {
 		.imgcontainer {display: flex; flex-direction: column; width: 100%; margin-left: auto; margin-right: auto;}
 		}
+
+	@media screen and (max-width: 220px) {
+    	.bloccosx1 {display: flex; flex-direction: column; margin-left: auto; margin-right: auto; width: 100%; box-sizing: border-box;}
+		.mypic {border-radius: 50%; width: 100%; height: auto;}
+	}
+		
 
 	@media screen and (max-width: 835px) {
   		.topnav.responsive {position: relative;}
